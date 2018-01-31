@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button color='danger' menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <ion-icon name ="home"></ion-icon>
+    </ion-title>
+    <button ion-button color='light' (click) = "goToSettingsPage()">
+        <ion-icon color='danger' name="settings"></ion-icon>
+    </button>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-footer no-border>
+    <ion-toolbar>
+      <ion-title>contate-noss</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
+
+
+<ion-content class="card-background-page" padding>
+  <h1 text-center>IAGeo</h1>
+  <img src="assets/imgs/name.png"/>
+
+  <p text-justify>
+    O intúito deste App é expor trabalhos realizados por geofísicos de todo o Brasil. 
+    Para isso basta acessar a página abaixo escrevendo seu projeto nos moldes do "IAGeo" e mandar para o e-mail de contato presente nesta pagina
+  </p>
+  
+  <button ion-button full color="danger" (click)="goToTestPage()">
+      irformações necessárias para envio
+  </button>
+
+  <h3 text-center>Trabalhos Geofísicos por método</h3>
+    
+      <ion-card>
+        <img src="assets/imgs/slatio.png"/>
+        <div class="card-title">Sísmica</div>
+        <div class="card-subtitle">
+            <button ion-button icon-left clear small (click)="goToTestPage()">
+              <ion-icon name="eye"></ion-icon>
+              <div>Veja maiss</div>
+            </button>
+          </div>
+        
+      </ion-card>
+      <ion-card>
+          <img src="assets/imgs/name.png"/>
+          <div class="card-title">Potenciais</div>
+          
+          <button ion-button icon-left clear small (click)="goToMetodogamaespectometricoPage()">
+            <ion-icon name="eye"></ion-icon>
+            <div>veeja mais</div>
+          </button>
+        </ion-card>
+        <ion-card>
+          <img src="assets/imgs/name.png"/>
+          <div class="card-title">Elétricos</div>
+          
+          <button ion-button icon-left clear small (click)="goToListPage()">
+            <ion-icon name="eye"></ion-icon>
+            <div>veja mais</div>
+          </button>
+        </ion-card>
+      
+        <ion-card>
+            <img src="assets/imgs/name.png"/>
+            <div class="card-title">Radiométricos</div>
+            
+            <button ion-button icon-left clear small (click)="goToListradiometricosPage()">
+              <ion-icon name="eye"></ion-icon>
+              <div>veja mais</div>
+            </button>
+          </ion-card>
+
+        <ion-card>
+            <img src="assets/imgs/name.png"/>
+            <div class="card-title">Geofísica de Poço</div>
+            
+            <button ion-button icon-left clear small (click)="goToMetodogeotermicoPage()">
+              <ion-icon name="eye"></ion-icon>
+              <div>veja mais</div>
+            </button>
+          </ion-card>
+        
+          <ion-card>
+              <img src="assets/imgs/name.png"/>
+              <div class="card-title">Gamaespectométricos</div>
+              
+              <button ion-button icon-left clear small (click)="goToMetodogeotermicoPage()">
+                <ion-icon name="eye"></ion-icon>
+                <div>veja maiss</div>
+              </button>
+            </ion-card>
+  
+  </ion-content> 
+        

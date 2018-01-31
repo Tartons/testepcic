@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button color='danger' menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Método Gravimétrico</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <div text-center>
+        {{item.title}}
+      </div>
+      <div text-start>
+        {{item.note}}
+      </div>
+      <ion-icon [name]="item.icon" item-end></ion-icon>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
